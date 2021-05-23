@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <include layout="@layout/toolbar"/>
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:textColor="@android:color/black"
+            android:text="Guess" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:id="@+id/attemptList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guessAttemptNo"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:text="1."/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etGuessGuess"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:textSize="30dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvGuessScore"
+            android:paddingLeft="10dp"
+            android:textSize="30dp"
+            android:textColor="@android:color/black"
+            android:text="lower"/>
+    </LinearLayout>
+
+
+</LinearLayout>
